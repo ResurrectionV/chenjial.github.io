@@ -1,4 +1,4 @@
 // js/script.js
 
-console.log("Hello from script.js! Aren't we fancy?");
-alert("Time to dazzle your visitors with pop-up windows. Or irritate them. Either way!");
+console.log("Hello, This is Chenjia's Personal Website!!");
+// You can add interactive functionality or special effects here if you wish.

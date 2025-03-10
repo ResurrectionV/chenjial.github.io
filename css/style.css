@@ -1,22 +1,193 @@
-/* css/style.css */
-body {
+/* =======================
+   Base & Typography
+======================= */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: #f0f0f0; /* A very subtle grey background */
+    box-sizing: border-box;
+  }
+
+  strong {
+    font-weight: 1000; /* or 600, as your font allows */
+    color: #000; /* or your preferred color */
   }
   
-  h1 {
-    color: #333; /* Slightly more interesting than pure black */
-    text-align: center;
-    margin-top: 50px;
+  /* 
+    If you'd rather keep the original "Open Sans" or your chosen fonts, 
+    update font-family below. The HTML <head> includes Montserrat/Lora, 
+    so let's default to Montserrat for headings, Lora or fallback for text:
+  */
+  body {
+    font-family: 'Lora', serif; /* uses Lora */
   }
   
-  p {
-    max-width: 600px;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 1.6;
+  h1, h2, h3, .me-title, .nav-link, .left-ul a {
+    font-family: 'Montserrat', sans-serif; /* uses Montserrat */
+  }
+  
+  /* 
+     If you want your headings to use Montserrat:
+     h1, h2, h3, .me-title, .nav-link, .left-ul a {
+       font-family: 'Montserrat', sans-serif;
+     }
+  */
+  
+  /* =======================
+     Navigation
+  ======================= */
+  .top-nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-ul, .right-ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .left-ul a, .right-ul a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+    font-family: 'Montserrat', sans-serif; /* Make nav text Montserrat if you like */
+  }
+  
+  .left-ul a:hover, .right-ul a:hover {
+    color: #0077cc; /* Hover color from older snippet */
+  }
+  
+  /* =======================
+     Intro Section
+  ======================= */
+  .Intro {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    position: relative;
+  }
+  
+  .Intro h1 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-img {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
+    max-width: 260px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* The paragraphs in the Intro section */
+  .intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.0rem;
+  }
+  
+  .intro-link {
+    color: #0077cc; 
+    text-decoration: none;
+  }
+  
+  .intro-link:hover {
+    color: #005fa3; 
+  }
+  
+  /* Icons row inside .Intro */
+  .icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .icon-link {
+    text-decoration: none;
     color: #666;
+    transition: color 0.2s ease-in-out;
   }
   
+  .icon-link:hover {
+    color: #0077cc;
+  }
+  
+  /* Divider */
+  .divider {
+    color: rgb(218, 218, 218);
+    margin: 2rem auto;
+    width: 90%;
+  }
+  
+  /* =======================
+     About Me Section
+  ======================= */
+  .Me {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .me-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .Me-Text {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  
+  .Me-Text a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .Me-Text a:hover {
+    color: #005fa3;
+  }
+  
+  ul {
+    list-style: disc inside;
+    margin: 1rem 0 1rem 1rem;
+  }
+  
+  li.Me-Text {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* =======================
+     Responsive Tweak
+  ======================= */
+  @media (max-width: 768px) {
+    .intro-img {
+      float: none;
+      display: block;
+      margin: 1rem auto;
+      max-width: 200px;
+    }
+  
+    .Intro h1 {
+      text-align: center;
+    }
+  
+    .top-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .right-ul {
+      margin-top: 1rem;
+    }
+  }

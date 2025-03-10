@@ -1,17 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>My Marvelous Page</title>
-    <!-- Link to your main stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <h1>Hello Universe!</h1>
-    <p>This text should appear in a delightful style—once we set it up properly!</p>
+<head>
+  <meta charset="UTF-8" />
+  <title>Chenjia Li | Personal Website</title>
 
-    <!-- We'll put JS references at the bottom of the body (best practice) -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Fonts (feel free to remove or change) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Your main CSS file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google site verification & analytics (remove or edit if you don’t need them) -->
+  <meta name="google-site-verification" content="2w6Ix49gFyk_7x0-Cox1jypSecCp0yVlI7gJv3AUXgY" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-45FCT10JDE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-45FCT10JDE');
+  </script>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="top-nav">
+    <!-- Left side -->
+    <ul class="left-ul">
+      <li><a href="#">Chenjia Li</a></li>
+    </ul>
+
+    <!-- Right side -->
+    <ul class="right-ul">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">Research</a></li>
+      <li><a href="#" class="nav-link">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- INTRO SECTION -->
+  <div class="Intro">
+    <h1>Chenjia Li</h1>
+    <!-- Example image aligned to the right -->
+    <img src="images/sf.jpg" alt="Chenjia Li" class="intro-img" />
+    <p class="intro-text">
+        MS Student @
+      <a href="https://www.cs.jhu.edu/" target="_blank" class="intro-link">
+        Johns Hopkins University, Whiting School of Engineering
+      </a>
+    </p>
+    <p class="intro-text">
+      <strong>E-mail:</strong>
+      <a href="mailto:cli212@jh.edu" class="intro-link">cli212@jh.edu</a>
+    </p>
+    <p class="intro-text">
+      <strong>Major:</strong> Master of Science in Computer Science Engineering
+    </p>
+    <p class="intro-text">
+        <strong>Research Interest:</strong> Reasoning Video/Image Segmentation/Grounding- /VQA/Summary, Machine Learning, LLMs, LLMs Quantization
+    </p>
+    <p class="intro-text">
+        I'm currently working as an MS Research Assistant at the
+        <a
+          href="https://arcade.cs.jhu.edu/"
+          target="_blank"
+          class="intro-link"
+        >
+          ARCADE Lab
+        </a>
+        at Johns Hopkins University. 
+    </p>
+      
+    <!-- ICONS (Email, CV, GitHub) -->
+    <div class="icons">
+        <a href="mailto:zw4re@virginia.edu" style="text-decoration:none">
+            <i class="fa-regular fa-envelope" style="color:grey; font-size:44px"></i>
+        </a>
+      <!-- CV icon (using Academicons or Font Awesome) -->
+      <a href="images/Chenjia-Resume-EN.pdf" target="_blank" class="icon-link" title="Resume PDF">
+        <i class="ai ai-cv-square ai-2x" style="font-size:44px;"></i>
+      </a>
+      <!-- GitHub icon -->
+      <a href="https://github.com/ResurrectionV" target="_blank" class="icon-link" title="GitHub Profile">
+        <i class="fa fa-github" style="font-size:44px;"></i>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ABOUT ME SECTION -->
+  <div class="Me">
+    <h1 class="me-title">About Me</h1>
+    <p class="Me-Text">
+        I am a graduate student in Computer Science at Johns Hopkins University, building on my experiences at Boston University and Rutgers University, where I earned a triple major in <strong>Computer Science</strong>, <strong>Statistics</strong>, and <strong>Mathematics</strong>. Driven by both academic rigor and real-world applications, I’ve explored a wide range of topics in Sentiment Analysis, Deep Generative Model, Data Analysis techniques, and more.
+    </p>
+      
+    <p class="Me-Text">
+        My current research focuses on deep learning for video reasoning, segmentation, and more broadly, bridging theoretical insights with practical solutions in computer vision and language models. I’ve co-authored publications under Professor Mathias Unberath’s guidance at the Arcade Lab, developing digital twin-based segmentation approaches that increase both region-similarity and contour-accuracy metrics by over 30%, and I'm currently preparing a NeurIPS submission extending these techniques to tasks like VQA, Grounding, and summarization. 
+    </p>
+      
+    <p class="Me-Text">
+        Prior to JHU, I contributed to the Art and AI Laboratory at Rutgers, delving into generative adversarial networks and stable diffusion fine-tuning. I enjoy investigating the reliability and interpretability of modern AI, especially in sequential data such as human language and time-series signals. Outside the lab, you might find me refining my programming skills (Python, Java, C, or assembly), sampling new ideas from classic literature, or wrestling with Kaggle’s AI challenges in my quest for continuous improvement. 
+    </p>
+      
+    <p class="Me-Text">
+        In the future, I plan to push boundaries in computer vision, advanced machine learning, and real-time AI systems, leveraging my robust mathematical foundation and my knack for interdisciplinary research. I speak Mandarin, English, and Japanese, and I’m always excited to collaborate on ambitious projects that merge scientific rigor with creative insight. Feel free to review my resume and reach out for collaboration or discussion.
+    </p>
+    <p class="Me-Text">
+        Looking ahead, I am actively seeking roles in <strong>LLM</strong> and 
+        <strong>MLE</strong> positions, and exploring <strong>PhD</strong> 
+        opportunities that combine strong theoretical underpinnings with tangible 
+        real-world impact. My robust mathematical foundation, cross-disciplinary 
+        mindset, and passion for research continue to drive me toward new 
+        innovations in AI. Feel free to review my resume and reach out for potential 
+        collaborations or discussions.
+    </p>
+      
+    <h1 class="me-title">Recent Updates</h1>
+    <ul>
+        <li class="Me-Text">2025.04: Further refined digital twin-based segmentation methods under Professor Mathias Unberath and PhD Yiqing Shen, submitted to MICCAI2025.</li>
+
+        <li class="Me-Text">2025.01: Completed an online digital twin system for reasoning segmentation, also under Professor Mathias Unberath and PhD Yiqing Shen, submitted to ICCV2025.</li>
+        
+        <li class="Me-Text">2024.09: Became a Graduate Research Assistant in the ARCADE Lab at Johns Hopkins University, co-authoring novel segmentation approaches.</li>
+        
+        <li class="Me-Text">2024.08: Began the Master of Science in Engineering program in Computer Science at JHU, expanding on reasoning segmentation tasks.</li>
+        
+        <li class="Me-Text">2023.09: Enrolled in Boston University’s Computing and Data Science master’s program, focusing on advanced data-driven and machine learning techniques.</li>
+        
+        <li class="Me-Text">2023.05: Conducted research under Professor Ahmed Elgammal at the Art and AI Laboratory, exploring generative models (GANs, Stable Diffusion) and fine-tuning.</li>
+        
+        <li class="Me-Text">2022.12: Completed an independent study under Professor Michael Luvalle at Rutgers University, specializing in text preprocessing and sentiment classification.</li>        
+    </ul>
+  </div>
+</body>
 </html>
